@@ -15,6 +15,7 @@ form.addEventListener('submit', function(e){
         // document.querySelector('.successMessage').style.display='block'
         mensagemSucesso.innerHTML = success;
         mensagemSucesso.style.display='block';
+        mensagemDraw.style.backgroundColor='green';
         campoA = '';
         campoB = '';
     }else if (campoA == campoB){
