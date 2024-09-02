@@ -8,13 +8,13 @@ form.addEventListener('submit', function(e){
     const campoB = document.getElementById('campoB').value;
     const success = `O Número ${campoB} é <b>Maior</b> que ${campoA}`;
     const error = `O Número ${campoB} é <b>Menor</b> que ${campoA}`;
-    const draw = `Ambos os Números (${campoA} e ${campoB}) são Iguais`
+    const draw = `Ambos os Números (${campoA} e ${campoB}) são Iguais`;
 
     if(campoA < campoB){
         const mensagemSucesso = document.querySelector('.Message');
         // document.querySelector('.successMessage').style.display='block'
         mensagemSucesso.innerHTML = success;
-        mensagemSucesso.style.display='block'
+        mensagemSucesso.style.display='block';
         campoA = '';
         campoB = '';
     }else if (campoA == campoB){
